@@ -1,0 +1,73 @@
+import ProjectCard from "./project-card";
+import chatbot from "../assets/chatbot.png"
+import ecommerce from "../assets/ecommerce.png"
+import recipe from "../assets/recipe.png"
+import portfolio from "../assets/portfolio.png"
+
+const projects = [
+  {
+    title: "AI Chat Application",
+    description:
+      "A modern AI chatbot built with React, TypeScript and OpenRouter API with real-time conversations.",
+    image: chatbot,
+    technologies: ["React", "TypeScript", "Tailwind", "API"],
+    github: "https://github.com/JoeAsn/chat-bot.git",
+    demo: "#",
+    size: "normal",
+  },
+  {
+    title: "E-Commerce Platform",
+    description:
+      "A full-featured ecommerce application with authentication, cart management and product APIs.",
+    image: ecommerce,
+    technologies: ["React", "TypeScript", "REST API"],
+    github: "https://github.com/JoeAsn/Ecommerce-Marketplace.git",
+    demo: "#",
+    size: "large",
+  },
+  {
+    title: "AI recipe",
+    description:
+      "A responsive music application using external APIs and modern frontend techniques.",
+    image: recipe,
+    technologies: ["React", "API", "CSS"],
+    github: "https://github.com/JoeAsn/Recipe-App.git",
+    demo: "#",
+    size: "normal",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A high-performance personal portfolio built with React and Tailwind CSS.",
+    image : portfolio,
+    technologies: ["React", "Tailwind"],
+    github: "#",
+    demo: "#",
+    size: "wide",
+  },
+];
+
+export default function Projects() {
+  return (
+    <section id="projects" className="bg-slate-100 py-28 transition-colors dark:bg-[#081526]">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        <div className="mb-16 flex items-end justify-between">
+          <div>
+            <p className="mb-3 uppercase tracking-[0.3em] text-cyan-500">Projects</p>
+            <h2 className="text-5xl font-black text-slate-900 dark:text-white">Featured Works</h2>
+          </div>
+
+          <a href="#" className="hidden text-sm font-semibold uppercase tracking-widest text-slate-500 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-white md:block">
+            View All →
+          </a>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
