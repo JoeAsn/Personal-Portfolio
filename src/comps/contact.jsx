@@ -29,8 +29,9 @@ export default function Contact() {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    formData.append("access_key", import.meta.VITE_MESSAGE_ACCESS_KEY);
+    const form = event.target;
+    const formData = new FormData(form);
+    formData.append("access_key", import.meta.env.VITE_MESSAGE_ACCESS_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -39,6 +40,10 @@ export default function Contact() {
 
     const data = await response.json();
     setResult(data.success ? "Success!" : "Error");
+
+    if (data.success) {
+      form.reset();
+    }
   };
   return (
     <section
@@ -98,21 +103,24 @@ export default function Contact() {
               Send Message
             </h3>
 
-            <form className="mt-8 space-y-5"  onSubmit={onSubmit}>
+            <form className="mt-8 space-y-5" onSubmit={onSubmit}>
               <input
+                name="name"
                 type="text"
                 placeholder="Your Name"
                 className="w-full rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-white dark:placeholder:text-zinc-500"
                 required
               />
               <input
+                name="email"
                 type="email"
                 placeholder="Your Email"
                 className="w-full rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-white dark:placeholder:text-zinc-500"
                 required
               />
               <textarea
-              required
+                name="message"
+                required
                 rows="5"
                 placeholder="Your Message"
                 className="w-full rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-white dark:placeholder:text-zinc-500"
