@@ -3,6 +3,7 @@ import chatbot from "../assets/chatbot.png"
 import ecommerce from "../assets/ecommerce.png"
 import recipe from "../assets/recipe.png"
 import portfolio from "../assets/portfolio.png"
+import Resume from "../assets/Resume.png"
 
 const projects = [
   {
@@ -20,7 +21,7 @@ const projects = [
     description:
       "A full-featured ecommerce application with authentication, cart management and product APIs.",
     image: ecommerce,
-    technologies: ["React", "TypeScript", "REST API"],
+    technologies: ["React", "TypeScript" , "Supabase"],
     github: "https://github.com/JoeAsn/Ecommerce-Marketplace.git",
     demo: "#",
     size: "large",
@@ -28,9 +29,9 @@ const projects = [
   {
     title: "AI recipe",
     description:
-      "A responsive music application using external APIs and modern frontend techniques.",
+      "A Responsive site where give ingredinets to the chefAI which responds with a Recipe.",
     image: recipe,
-    technologies: ["React", "API", "CSS"],
+    technologies: ["React", "API", "CSS" , "TypeScript"],
     github: "https://github.com/JoeAsn/Recipe-App.git",
     demo: "#",
     size: "normal",
@@ -41,10 +42,20 @@ const projects = [
       "A high-performance personal portfolio built with React and Tailwind CSS.",
     image : portfolio,
     technologies: ["React", "Tailwind"],
-    github: "#",
+    github: "https://github.com/JoeAsn/Personal-Portfolio.git",
     demo: "#",
     size: "wide",
   },
+    {
+    title: "Resume Analyzer",
+    description:
+      "A responsive Website which Helps Job applicants to optimize thier resume besed on Job specification",
+    image: Resume ,
+    technologies: ["React", "API", "TailwindCSS" , "TypeScript"],
+    github: "https://github.com/JoeAsn/Resume-Analyzer.git",
+    demo: "#",
+    size: "wide",
+  }
 ];
 
 export default function Projects() {
@@ -57,7 +68,7 @@ export default function Projects() {
             <h2 className="text-5xl font-black text-slate-900 dark:text-white">Featured Works</h2>
           </div>
 
-          <a href="#" className="hidden text-sm font-semibold uppercase tracking-widest text-slate-500 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-white md:block">
+          <a href="https://github.com/JoeAsn" className="hidden text-sm font-semibold uppercase tracking-widest text-slate-500 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-white md:block">
             View All →
           </a>
         </div>

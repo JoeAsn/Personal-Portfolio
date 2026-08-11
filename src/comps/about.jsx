@@ -135,18 +135,18 @@ export default function About() {
             >
               <p>
                 I'm Yohannes Asnake, a Computer Science student and aspiring
-                full-stack developer passionate about creating modern, scalable
+                software enginner passionate about creating modern, scalable
                 web applications and AI-powered software.
               </p>
 
               <p>
                 I enjoy solving real-world problems through clean architecture,
                 beautiful interfaces, and efficient backend systems. My goal is
-                to build products that create meaningful impact.
+                to build products that create Intellegent Apps , websites and systems for my community.
               </p>
 
               <p>
-                Currently, I'm focused on mastering React, TypeScript, backend
+                Currently, I'm focused on mastering React, TypeScript and Looking forward to dive deep into backend
                 engineering, and AI integration while building
                 production-quality projects.
               </p>

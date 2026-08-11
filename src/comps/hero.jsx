@@ -142,7 +142,7 @@ export default function Hero({ theme }) {
             "
           >
             I design and build fast, scalable and visually stunning web
-            applications using React, TypeScript, Node.js and modern UI
+            applications using React, TypeScript, and modern UI
             technologies.
           </p>
 
