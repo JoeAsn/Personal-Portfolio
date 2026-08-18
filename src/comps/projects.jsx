@@ -4,8 +4,18 @@ import ecommerce from "../assets/ecommerce.png"
 import recipe from "../assets/recipe.png"
 import portfolio from "../assets/portfolio.png"
 import Resume from "../assets/Resume.png"
-
+import furniture from "../assets/furniture.png"
 const projects = [
+    {
+    title: "Furniture Website",
+    description:
+      "Responsive website design for a local furniture company built with React + Ts + tailwindcss",
+    image: furniture,
+    technologies: ["React", "TypeScript", "Tailwind"],
+    github: "https://github.com/JoeAsn/",
+    demo: "https://zefmesh-furniture-webdesign.vercel.app/",
+    size: "wide",
+  },
   {
     title: "AI Chat Application",
     description:
@@ -13,7 +23,7 @@ const projects = [
     image: chatbot,
     technologies: ["React", "TypeScript", "Tailwind", "API"],
     github: "https://github.com/JoeAsn/chat-bot.git",
-    demo: "#",
+    demo: "https://chat-bot-five-navy.vercel.app/",
     size: "normal",
   },
   {
@@ -33,18 +43,8 @@ const projects = [
     image: recipe,
     technologies: ["React", "API", "CSS" , "TypeScript"],
     github: "https://github.com/JoeAsn/Recipe-App.git",
-    demo: "#",
+    demo: "https://recipe-app-rouge-six.vercel.app/",
     size: "normal",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A high-performance personal portfolio built with React and Tailwind CSS.",
-    image : portfolio,
-    technologies: ["React", "Tailwind"],
-    github: "https://github.com/JoeAsn/Personal-Portfolio.git",
-    demo: "#",
-    size: "wide",
   },
     {
     title: "Resume Analyzer",
@@ -53,8 +53,18 @@ const projects = [
     image: Resume ,
     technologies: ["React", "API", "TailwindCSS" , "TypeScript"],
     github: "https://github.com/JoeAsn/Resume-Analyzer.git",
-    demo: "#",
+    demo: "https://resume-analyzer-sand-psi.vercel.app/",
     size: "wide",
+  } ,
+  {
+    title: "Portfolio Website",
+    description:
+      "A high-performance personal portfolio built with React and Tailwind CSS.",
+    image : portfolio,
+    technologies: ["React", "Tailwind"],
+    github: "https://github.com/JoeAsn/Personal-Portfolio.git",
+    demo: "#",
+    size: "normal",
   }
 ];
 
