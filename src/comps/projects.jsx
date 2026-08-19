@@ -33,7 +33,7 @@ const projects = [
     image: ecommerce,
     technologies: ["React", "TypeScript" , "Supabase"],
     github: "https://github.com/JoeAsn/Ecommerce-Marketplace.git",
-    demo: "#",
+    demo: "https://ecommerce-marketplace-theta.vercel.app/",
     size: "large",
   },
   {
