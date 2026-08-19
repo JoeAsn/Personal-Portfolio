@@ -50,7 +50,7 @@ export default function Navbar({ theme, onToggleTheme }) {
 
           {/* Resume Button */}
           <a
-            href={"/resume/Yohannes_Asnake_CV.docx"}
+            href={"/resume/Yohannes_Asnake_CV.pdf"}
             target="_blank"
             className="hidden cursor-pointer rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:opacity-90 sm:inline-flex"
           >
@@ -114,7 +114,7 @@ export default function Navbar({ theme, onToggleTheme }) {
               ))}
 
               <a
-                href={"/resume/Yohannes_Asnake_CV.docx"}
+                href={"/resume/Yohannes_Asnake_CV.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex cursor-pointer rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white"
