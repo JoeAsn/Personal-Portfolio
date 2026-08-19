@@ -13,10 +13,14 @@ export default function Navbar({ theme, onToggleTheme }) {
   ];
 
   return (
-    <nav className={`fixed top-0 z-50 w-full border-b backdrop-blur-xl shadow-sm ${isDark ? "border-white/10 bg-[#12131a]/80" : "border-slate-200 bg-white/80"}`}>
+    <nav
+      className={`fixed top-0 z-50 w-full border-b backdrop-blur-xl shadow-sm ${isDark ? "border-white/10 bg-[#12131a]/80" : "border-slate-200 bg-white/80"}`}
+    >
       <div className="relative mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6">
         {/* Logo */}
-        <div className={`text-2xl font-bold tracking-tighter ${isDark ? "text-white" : "text-slate-900"}`}>
+        <div
+          className={`text-2xl font-bold tracking-tighter ${isDark ? "text-white" : "text-slate-900"}`}
+        >
           Y.A
         </div>
 
@@ -35,8 +39,6 @@ export default function Navbar({ theme, onToggleTheme }) {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
-
-
           {/* Theme Icon - All Devices */}
           <button
             onClick={onToggleTheme}
@@ -47,9 +49,13 @@ export default function Navbar({ theme, onToggleTheme }) {
           </button>
 
           {/* Resume Button */}
-          <button className="hidden rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:opacity-90 sm:block">
+          <a
+            href={"/resume/Yohannes_Asnake_CV.docx"}
+            target="_blank"
+            className="hidden cursor-pointer rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:opacity-90 sm:inline-flex"
+          >
             Resume
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -58,12 +64,30 @@ export default function Navbar({ theme, onToggleTheme }) {
             className={`${isDark ? "text-gray-300" : "text-slate-700"} md:hidden`}
           >
             {isMenuOpen ? (
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             ) : (
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <line x1="3" y1="12" x2="21" y2="12" />
                 <line x1="3" y1="6" x2="21" y2="6" />
                 <line x1="3" y1="18" x2="21" y2="18" />
@@ -74,7 +98,9 @@ export default function Navbar({ theme, onToggleTheme }) {
 
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
-          <div className={`absolute left-0 top-16 w-full border-b px-6 py-5 md:hidden ${isDark ? "border-white/10 bg-[#12131a]" : "border-slate-200 bg-white"}`}>
+          <div
+            className={`absolute left-0 top-16 w-full border-b px-6 py-5 md:hidden ${isDark ? "border-white/10 bg-[#12131a]" : "border-slate-200 bg-white"}`}
+          >
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
@@ -87,9 +113,14 @@ export default function Navbar({ theme, onToggleTheme }) {
                 </a>
               ))}
 
-              <button className="mt-2 rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white">
-                Resume
-              </button>
+              <a
+                href={"/resume/Yohannes_Asnake_CV.docx"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex cursor-pointer rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white"
+              >
+                View Resume
+              </a>
             </div>
           </div>
         )}
