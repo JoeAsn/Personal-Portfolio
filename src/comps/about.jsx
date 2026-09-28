@@ -4,6 +4,7 @@ import {
   FaCss3Alt,
   FaGitAlt,
   FaPython,
+  FaNodeJs,
 } from "react-icons/fa";
 
 import {
@@ -51,6 +52,10 @@ const skills = [
   {
     name: "Python",
     icon: <FaPython className="text-blue-500 text-5xl" />,
+  },
+  {
+    name: "Node.js",
+    icon: <FaNodeJs className="text-green-500 text-5xl" />,
   },
 ];
 
