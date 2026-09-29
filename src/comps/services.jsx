@@ -1,6 +1,7 @@
 import {
   Code2,
   Layers,
+  Server,
 //   BrainCircuit,
 //   Rocket,
 //   Database,
@@ -18,6 +19,13 @@ const services = [
     title: "Front-End Applications",
     description:
 "I build modern, interactive, and scalable web applications using current frontend technologies, focusing on performance, usability, and clean code."  }
+  ,
+  {
+    icon: <Server size={28} />,
+    title: "Simple REST APIs",
+    description:
+      "I build simple REST APIs for creating, reading, updating, and deleting data with clear and reliable endpoints.",
+  }
 ];
 
 export default function Services() {

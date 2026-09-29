@@ -1,10 +1,10 @@
 import ProjectCard from "./project-card";
 import chatbot from "../assets/chatbot.png"
 import ecommerce from "../assets/ecommerce.png"
-import recipe from "../assets/recipe.png"
 import portfolio from "../assets/portfolio.png"
 import Resume from "../assets/Resume.png"
 import furniture from "../assets/furniture.png"
+import fileManager from "../assets/file-manager.png"
 const projects = [
     {
     title: "Furniture Website",
@@ -37,13 +37,13 @@ const projects = [
     size: "large",
   },
   {
-    title: "AI recipe",
+    title: "File Manager",
     description:
-      "A Responsive site where give ingredinets to the chefAI which responds with a Recipe.",
-    image: recipe,
-    technologies: ["React", "API", "CSS" , "TypeScript"],
-    github: "https://github.com/JoeAsn/Recipe-App.git",
-    demo: "https://recipe-app-rouge-six.vercel.app/",
+      "A responsive file management site with upload, download, search, and delete functionality.",
+    image: fileManager,
+    technologies: ["React", "Node.js", "Tailwind"],
+    github: "https://github.com/JoeAsn/File-Manager.git",
+    demo: "#",
     size: "normal",
   },
     {
